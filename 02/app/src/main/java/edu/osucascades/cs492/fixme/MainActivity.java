@@ -2,6 +2,7 @@ package edu.osucascades.cs492.fixme;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -74,13 +75,18 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkAnswer(boolean userPressedTrue) {
         boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
+
         int messageResId = 0;
-        if (userPressedTrue == answerIsTrue) {
+
+        if(userPressedTrue == answerIsTrue) {
             messageResId = R.string.correct_toast;
         } else {
             messageResId = R.string.incorrect_toast;
         }
-        Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show();
+
+        Toast answer_Toast = Toast.makeText(this, messageResId, Toast.LENGTH_SHORT);
+        answer_Toast.setGravity(Gravity.TOP, 0,0);
+        answer_Toast.show();
     }
 
 }
