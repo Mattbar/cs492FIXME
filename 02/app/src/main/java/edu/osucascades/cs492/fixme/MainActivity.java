@@ -37,8 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 updateQuestion();
             }
         });
-         int question = mQuestionBank[mCurrentIndex].getTextResId();
-        
+
 
         mTrueButton = (Button) findViewById(R.id.true_button);
         mTrueButton.setOnClickListener(new View.OnClickListener() {
