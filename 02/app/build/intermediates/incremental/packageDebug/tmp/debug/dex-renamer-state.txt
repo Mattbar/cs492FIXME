@@ -1,0 +1,4 @@
+#Fri Oct 04 17:46:15 PDT 2019
+base.0=/home/mattbarnes/Android/cs492FIXME/02/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
